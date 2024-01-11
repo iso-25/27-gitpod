@@ -1,0 +1,89 @@
+.footer {
+  background-color: $background-primary;
+
+  &__container{
+    padding: 48rem 65rem 32rem;
+	max-width: 917rem;
+	width: 100%;
+	margin-inline: auto;
+  }  
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 48rem;
+    gap: 20rem;
+  }
+  &__nav {
+    color: $color-text-primary;
+    font: $font-link-footer;
+    max-width: 100rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7rem;
+  }
+
+  &__socials {
+    padding-top: 35rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20rem;
+
+    border-top: 1rem solid $background-secondary;
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8rem;
+    color: $color-text-primary;
+    font: $font-link-footer;
+    text-wrap: nowrap;
+  }
+
+  &__logo-img {
+    max-width: 24rem;
+    height: auto;
+  }
+
+  &__logo-txt {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  &__logo-year {
+    font-size: 13rem;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: row;
+    gap: 16rem;
+  }
+}
+
+.first-element-class {
+  color: $color-text-bolt;
+  font-weight: 700;
+}
+
+.element-mark {
+  position: relative;
+  &::after {
+    content: "*";
+    position: absolute;
+    top: 0;
+    right: -6rem;
+    width: 4rem;
+    color: $primary;
+    font-family: $ff;
+    font-size: 10rem;
+    font-weight: 400;
+    line-height: 0rem;
+  }
+}
