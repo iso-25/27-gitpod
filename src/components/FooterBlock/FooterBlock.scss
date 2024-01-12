@@ -1,24 +1,33 @@
 .footer {
   background-color: $background-primary;
 
-  &__container{
+  &__container {
     padding: 48rem 65rem 32rem;
-	max-width: 917rem;
-	width: 100%;
-	margin-inline: auto;
-  }  
+    max-width: 917rem;
+    width: 100%;
+    margin-inline: auto;
+
+    @include mobile {
+      padding: 30rem 35rem 20rem;
+    }
+  }
 
   &__links {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100rem);
     justify-content: space-between;
-    align-items: flex-start;
     padding-bottom: 48rem;
-    gap: 20rem;
+    gap: 40rem;
+
+    @include mobile {
+      justify-content: center;
+    }
+
   }
   &__nav {
     color: $color-text-primary;
     font: $font-link-footer;
-    max-width: 100rem;
+    width: 100rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -33,6 +42,12 @@
     gap: 20rem;
 
     border-top: 1rem solid $background-secondary;
+
+    @include mobile {
+      padding-top: 25rem;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   }
 
   &__logo {

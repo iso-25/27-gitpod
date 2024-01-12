@@ -1,5 +1,7 @@
 $ff: "Roboto", sans-serif; 
 $red: rgb(255, 3, 125);
+$white: #fff;
+
 
 $background-primary: #f9f9f9;
 $background-secondary: #ECE7E5;
@@ -12,6 +14,20 @@ $background-mobile-menu: rgba(0, 0, 0, 0.8);
 
 $transition: 0.2s ease-in;
 
-$font-link-footer: normal 400 13rem/19.5rem Roboto, sans-serif;
+$font-link-footer: normal 400 13rem/19.5rem $ff;
 
 $color-text-bolt: #12100C;
+
+$font-title-h1: normal 700 80rem/88rem $ff;
+$font-title-h2: normal 700 54rem/63.72rem $ff;
+$font-title-h3: normal 700 32rem/40rem $ff;
+
+$color-title: #12100C;
+$color-subtitle: #999795;
+
+$font-desc: normal 400 24rem/31.92rem $ff;
+$color-txt-desc: rgba(18, 16, 12, 0.70);
+
+$font-btn-extension: normal 700 18rem/31.86rem $ff;
+$color-txt-btn-extension:#12100c;
+

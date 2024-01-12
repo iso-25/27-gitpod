@@ -1,5 +1,12 @@
 html {
   font-size: 1px;
+  @include tablet {
+    font-size: 0.9px;
+  }
+
+  @include mobile {
+    font-size: 0.8px;
+  }  
 }
 
 body {

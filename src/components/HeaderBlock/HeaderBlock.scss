@@ -1,16 +1,13 @@
 .header {
+  z-index: 3;
   position:fixed;
   width: 100%;
-//   top: 0;
-//   left: 50%;
-//   transform: translateX(-50%);
   background-color: $background-primary;
 
   &__container {
     max-width: 1440rem;
     width: 100%;
     margin-inline: auto;
-
     padding: 20rem 32rem;
     display: flex;
     align-items: center;
@@ -21,6 +18,23 @@
   &__btn {
     width: 135rem;
   }
+
+  &__logo {
+    width: 135rem;
+    height: auto;
+    & img {
+      width: 100%;
+    }
+    @include tablet {
+      width: 100rem;
+    }
+
+    @include mobile {
+      width: 80rem;
+    }
+
+  }
+  
   &__nav {
     display: flex;
     align-items: center;
