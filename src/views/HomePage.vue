@@ -24,8 +24,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/styles/style.scss";
-
 .container {
   background: linear-gradient(
     180deg,

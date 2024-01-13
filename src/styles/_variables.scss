@@ -1,33 +1,69 @@
-$ff: "Roboto", sans-serif; 
+$ff: "Roboto", sans-serif;
 $red: rgb(255, 3, 125);
 $white: #fff;
 
-
 $background-primary: #f9f9f9;
-$background-secondary: #ECE7E5;
+$background-secondary: #ece7e5;
 
 $color-text-primary: rgba(18, 16, 12, 0.7);
-$color-text-secondary:  #f9f9f9;
-$primary: #FF8A00;
+$color-text-secondary: #f9f9f9;
+$primary: #ff8a00;
 
 $background-mobile-menu: rgba(0, 0, 0, 0.8);
 
 $transition: 0.2s ease-in;
 
-$font-link-footer: normal 400 13rem/19.5rem $ff;
-
-$color-text-bolt: #12100C;
-
-$font-title-h1: normal 700 80rem/88rem $ff;
-$font-title-h2: normal 700 54rem/63.72rem $ff;
-$font-title-h3: normal 700 32rem/40rem $ff;
-
-$color-title: #12100C;
+$color-text-bolt: #12100c;
+$color-title: #12100c;
 $color-subtitle: #999795;
+$color-txt-desc: rgba(18, 16, 12, 0.7);
+$color-txt-btn-extension: #12100c;
 
-$font-desc: normal 400 24rem/31.92rem $ff;
-$color-txt-desc: rgba(18, 16, 12, 0.70);
+:root {
+  --ff: "Roboto", sans-serif;
+  --font-link-footer: normal 400 13rem/150% var(--ff);
+  --font-title-h1: normal 700 80rem/110% var(--ff);
+  --font-title-h2: normal 700 54rem/118% var(--ff);
+  --font-title-h3: normal 700 32rem/125% var(--ff);
+  --font-desc: normal 400 24rem/138.783% var(--ff);
+  --font-desc-welcome: normal 400 23rem/138.783% var(--ff);
+  --font-btn-extension: normal 700 18rem/177% var(--ff);
+}
 
-$font-btn-extension: normal 700 18rem/31.86rem $ff;
-$color-txt-btn-extension:#12100c;
+@include desktop-small {
+  :root {
+    --font-title-h1: normal 700 60rem/110% var(--ff);
+    --font-title-h2: normal 700 50rem/118% var(--ff);
+    --font-desc: normal 400 22rem/138.783% var(--ff);
+    --font-desc-welcome: normal 400 21rem/138.783% var(--ff);
+  }
+}
 
+@include tablet {
+  :root {
+    --font-title-h1: normal 700 40rem/110% var(--ff);
+    --font-title-h2: normal 700 45rem/118% var(--ff);
+    --font-title-h3: normal 700 30rem/125% var(--ff);
+    --font-desc: normal 400 20rem/138.783% var(--ff);
+    --font-desc-welcome: normal 400 19rem/138.783% var(--ff);
+  }
+}
+/*
+@include tablet-small() {
+  :root {
+  }
+}*/
+
+@include mobile {
+  :root {
+    --font-title-h2: normal 700 40rem/118% var(--ff);
+    --font-title-h3: normal 700 26rem/125% var(--ff);
+    --font-desc: normal 400 16rem/138.783% var(--ff);
+    --font-desc-welcome: normal 400 15rem/138.783% var(--ff);
+  }
+}
+/*
+@include mobile-small {
+  :root {
+  }
+}*/

@@ -1,5 +1,5 @@
 <template>
-  <div class="title">{{ msg }}</div>
+  <div class="title-h2">{{ msg }}</div>
 </template>
 
 <script>
@@ -11,20 +11,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.title {
-  font: $font-title-h2;
-
-  @include desktop-small {
-    font-size: 50rem;
-  }
-
-  @include tablet {
-    font-size: 45rem;
-  }
-
-  @include mobile {
-    font-size: 40rem;
-  }
+<style lang="scss">
+.title-h2 {
+  font: var(--font-title-h2);
 }
 </style>

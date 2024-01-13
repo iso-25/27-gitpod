@@ -23,16 +23,18 @@
     @include desktop-small {
       margin-top: 30rem;
       margin-bottom: 40rem;
+      font-size: 21rem;
     }
     @include tablet {
       margin-top: 25rem;
       margin-bottom: 35rem;
+      font-size: 19rem;
     }
     @include mobile {
       margin-top: 20rem;
       margin-bottom: 30rem;
+      font-size: 15rem;
     }
-
   }
 
   &__workspace {
@@ -42,6 +44,16 @@
     align-items: center;
     gap: 24rem;
     margin-bottom: 18rem;
+
+    @include mobile {
+      gap: 10rem;
+    }
+
+    @include mobile-small {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20rem;
+    }
   }
 
   &__workspace-btn {
@@ -51,24 +63,33 @@
     box-shadow: 0rem 1rem 1rem 0rem rgba(0, 0, 0, 0.1);
     color: $color-txt-btn-extension;
     text-align: center;
-    font-size: 18rem;
-    font-weight: 700;
-    line-height: 22.5rem;
+    font: normal 700 18rem/125% var(--ff);
     text-wrap: nowrap;
 
+    @include desktop-small {
+      font-size: 17rem;
+    }
     @include tablet {
-      font-size: 15rem;
+      font-size: 16rem;
+    }
+    @include mobile {
+      padding: 10rem 24rem;
+      font-size: 14rem;
     }
   }
 
   &__workspace-btn-info {
     color: rgba(18, 16, 12, 0.7);
-    font-size: 16rem;
-    font-weight: 400;
-    line-height: 24rem;
+    font: normal 400 16rem/150% var(--ff);
 
+    @include desktop-small {
+      font-size: 15rem;
+    }
     @include tablet {
       font-size: 14rem;
+    }
+    @include mobile {
+      font-size: 12rem;
     }
   }
 
@@ -78,6 +99,20 @@
   }
 
   &__social-link {
+    width: 29rem;
+    height: 29rem;
+    & img {
+      width: 100%;
+    }
+    @include tablet {
+      width: 27rem;
+      height: 27rem;
+      }
+    @include mobile {
+      width: 25rem;
+      height: 25rem;
+      }
+
   }
 
   &__img {
@@ -98,8 +133,12 @@
     }
 
     @include tablet-small {
-      max-width: 100%;
+      max-width: 70%;
       padding: 0;
+    }
+
+    @include mobile {
+      max-width: 100%;
     }
   }
 }

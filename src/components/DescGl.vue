@@ -1,5 +1,5 @@
 <template>
-  <div class="desc">{{ msg }}</div>
+  <div class="desc-gl">{{ msg }}</div>
 </template>
 
 <script>
@@ -11,19 +11,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.desc {
+<style lang="scss">
+.desc-gl {
   color: $color-txt-desc;
-  font: $font-desc;
-
-  @include desktop-small {
-    font-size: 20rem;
-  }
-  @include tablet {
-    font-size: 18rem;
-  }
-  @include mobile {
-    font-size: 14rem;
-  }
+  font: var(--font-desc);
 }
 </style>

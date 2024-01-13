@@ -26,7 +26,7 @@
   }
   &__nav {
     color: $color-text-primary;
-    font: $font-link-footer;
+    font: var(--font-link-footer);
     width: 100rem;
     display: flex;
     flex-direction: column;
@@ -56,7 +56,7 @@
     align-items: center;
     gap: 8rem;
     color: $color-text-primary;
-    font: $font-link-footer;
+    font: var(--font-link-footer);
     text-wrap: nowrap;
   }
 
