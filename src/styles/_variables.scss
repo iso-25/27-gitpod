@@ -28,6 +28,10 @@ $color-txt-btn-extension: #12100c;
   --font-desc: normal 400 24rem/138.783% var(--ff);
   --font-desc-welcome: normal 400 23rem/138.783% var(--ff);
   --font-btn-extension: normal 700 18rem/177% var(--ff);
+  --font-btns: normal 700 14rem/114.286% var(--ff);
+
+  --transition-btn: 0.2s all ease-out;
+  --transform-btn: scale(1.1);
 }
 
 @include desktop-small {

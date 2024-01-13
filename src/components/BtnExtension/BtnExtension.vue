@@ -1,10 +1,10 @@
 <template>
-  <div class="btn">
-    <a :href="url" class="btn__link">
-      <div class="btn__btn-container">
-        <div class="btn__btn-border">
+  <div class="btn-ext">
+    <a :href="url" class="btn-ext__link">
+      <div class="btn-ext__btn-container">
+        <div class="btn-ext__btn-border">
         </div>  
-        <div class="btn__btn">
+        <div class="btn-ext__btn">
           <img v-if="imgName" :src="require(`@/assets/${imgName}`)" :alt="txtBtn" />
           <div>{{ txtBtn }}</div>
         </div>

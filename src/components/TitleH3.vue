@@ -13,6 +13,6 @@ export default {
 
 <style lang="scss">
 .title-h3 {
-  font: var(--font-title-h2);
+  font: var(--font-title-h3);
 }
 </style>
