@@ -48,5 +48,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/components/MainBlock/SectionWelcome/SectionWelcome.scss";
+@import "@/components/MainBlock/Section1Welcome/SectionWelcome.scss";
 </style>

@@ -23,6 +23,10 @@
       justify-content: center;
     }
 
+    @include mobile-small {
+      grid-template-columns: 1fr;
+      align-items: center;
+    }
   }
   &__nav {
     color: $color-text-primary;
@@ -32,6 +36,18 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 7rem;
+    @include mobile-small {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 0 35rem;
+    }
+  }
+
+  &__li {
+    @include mobile-small {
+      text-align: center;
+    }
   }
 
   &__socials {

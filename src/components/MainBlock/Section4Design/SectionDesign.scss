@@ -1,0 +1,44 @@
+.design {
+  padding: 160rem 0;
+  max-width: 1310rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    padding: 60rem 0;
+  }
+
+  &__title {
+    margin-bottom: 47rem;
+    text-align: center;
+  }
+
+  &__img {
+    max-width: 100%;
+    margin-bottom: 47rem;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  &__desc {
+    max-width: 877rem;
+    margin-inline: auto;
+    text-align: center;
+    margin-bottom: 29rem;
+  }
+  &__btns {
+    max-width: 916rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 16rem;
+    gap: 16rem;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+}

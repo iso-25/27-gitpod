@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "TitleH1",
+  name: "TitleH2",
   props: {
     msg: String,
   },

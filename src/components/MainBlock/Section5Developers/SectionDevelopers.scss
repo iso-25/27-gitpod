@@ -1,0 +1,40 @@
+.developers {
+  padding: 160rem 0;
+  max-width: 1310rem;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    padding: 60rem 0;
+  }
+
+  &__title {
+    margin-bottom: 57rem;
+    text-align: center;
+  }
+
+}
+
+.swiper-container {
+  max-width: 100%;
+}
+
+.swiper {
+  @include tablet-small {
+    max-height: 350px;
+  }  
+  @include mobile {
+    max-height: 440px;
+  }  
+  @include mobile-small {
+    max-height: 450px;
+  }  
+}
+
+.swiper-slide {
+  @include tablet-small {
+    overflow: hidden;
+  }  
+}

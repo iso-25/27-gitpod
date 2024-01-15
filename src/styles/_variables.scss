@@ -29,6 +29,7 @@ $color-txt-btn-extension: #12100c;
   --font-desc-welcome: normal 400 23rem/138.783% var(--ff);
   --font-btn-extension: normal 700 18rem/177% var(--ff);
   --font-btns: normal 700 14rem/114.286% var(--ff);
+  --font-dev: normal 400 16rem/150% var(--ff);
 
   --transition-btn: 0.2s all ease-out;
   --transform-btn: scale(1.1);
@@ -50,6 +51,7 @@ $color-txt-btn-extension: #12100c;
     --font-title-h3: normal 700 30rem/125% var(--ff);
     --font-desc: normal 400 20rem/138.783% var(--ff);
     --font-desc-welcome: normal 400 19rem/138.783% var(--ff);
+    --font-dev: normal 400 15rem/150% var(--ff);
   }
 }
 /*
@@ -60,10 +62,11 @@ $color-txt-btn-extension: #12100c;
 
 @include mobile {
   :root {
-    --font-title-h2: normal 700 40rem/118% var(--ff);
+    --font-title-h2: normal 700 34rem/118% var(--ff);
     --font-title-h3: normal 700 26rem/125% var(--ff);
     --font-desc: normal 400 16rem/138.783% var(--ff);
     --font-desc-welcome: normal 400 15rem/138.783% var(--ff);
+    --font-dev: normal 400 14rem/150% var(--ff);
   }
 }
 /*

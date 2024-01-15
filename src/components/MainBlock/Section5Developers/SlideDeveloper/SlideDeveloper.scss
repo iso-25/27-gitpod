@@ -1,0 +1,60 @@
+.dev {
+    max-width: 384rem;
+    margin-inline: auto;
+    border-radius: 16rem;
+    background: $white;    
+    padding: 24rem;
+    display: flex;
+    flex-direction: column;
+    gap: 14rem;
+
+    &__info-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+    }
+
+    &__info {
+        color: $color-title;
+        font: var(--font-dev);
+    }
+
+    &__name-container {
+        display: flex;
+        flex-direction: row;
+        gap: 12rem;
+    }
+
+    &__img {
+        max-width: 48rem;
+        border-radius: 24rem;
+        & img {
+            width: 100%;
+            border-radius: 24rem;
+        }
+    }
+
+    &__name-info {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+    }
+
+    &__name {
+        font: var(--font-dev);
+        font-weight: 700;
+    }
+
+    &__role {
+        font: var(--font-dev);
+    }
+    &__tag-span{
+        font: var(--font-dev);
+        line-height: 160%;
+    }
+
+    &__tag {
+        font: var(--font-dev);
+        font-weight: 700;
+    }
+}
