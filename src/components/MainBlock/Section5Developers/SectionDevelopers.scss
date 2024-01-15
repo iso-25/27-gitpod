@@ -15,12 +15,39 @@
     text-align: center;
   }
 
+
+  &__logos {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 27rem;
+    padding: 68rem 16rem 12rem;
+    margin: 0 85rem;
+
+    @include tablet-small {
+      padding: 20rem 10rem 10rem;
+      margin: 0;
+    }  
+  
+  }
+
+  &__logo-item {
+    padding: 10rem 16rem;
+    flex-shrink: 0;
+    & img {
+      width: 100%;
+    }
+  }
+
 }
 
 .swiper-container {
   max-width: 100%;
   border-radius: 16rem;
   // box-shadow: 0rem 2rem 10rem $color-text-primary;
+  margin-bottom: 8rem;
 }
 
 .swiper {
@@ -41,3 +68,5 @@
     overflow: hidden;
   }  
 }
+
+

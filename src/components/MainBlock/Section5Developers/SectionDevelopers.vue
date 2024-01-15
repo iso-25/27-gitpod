@@ -3,16 +3,14 @@
     <TitleH2 msg="Used by 400,000+ developers." class="developers__title" />
 
     <div class="swiper-container">
-      <swiper class="swiper" :direction="'vertical'" :spaceBetween="14" :slidesPerView="1"
-        :breakpoints="{
-          768: {
-            direction: 'horizontal',
-            spaceBetween: 24,
-            slidesPerView: 1, //If slidesPerView: 4, then all 4 slides fit on the entire screen
-            width: 384        //Because slidesPerView: 1
-          }
-        }" 
-        @swiper="onSwiper" @slideChange="onSlideChange">
+      <swiper class="swiper" :direction="'vertical'" :spaceBetween="14" :slidesPerView="1" :breakpoints="{
+        768: {
+          direction: 'horizontal',
+          spaceBetween: 24,
+          slidesPerView: 1, //If slidesPerView: 4, then all 4 slides fit on the entire screen
+          width: 384        //Because slidesPerView: 1
+        }
+      }" @swiper="onSwiper" @slideChange="onSlideChange">
         <swiper-slide class="swiper-slide" v-for="(item, index) in  developers" :key="index">
           <SlideDeveloper :txtInfo="item.txtInfo" :nameDev="item.nameDev" :roleDev="item.roleDev" :tagsDev="item.tagsDev"
             :imgName="item.imgName" />
@@ -21,6 +19,10 @@
     </div>
 
     <div class="developers__logos">
+      <div class="developers__logo-item" v-for="(item, index) in  logos" :key="index">
+        <img src="" alt="">
+        <img v-if="item.imgName" :src="require(`@/assets/devLogosImgs/${item.imgName}`)" :alt="item.name" />
+      </div>
     </div>
   </div>
 </template>
@@ -40,6 +42,56 @@ export default {
     SwiperSlide,
   },
   data() {
+    const logos = [
+      {
+        imgName: "001.svg",
+        name: "GitLab"
+      },
+      {
+        imgName: "002.svg",
+        name: "freeCodeCamp"
+      },
+      {
+        imgName: "003.svg",
+        name: "D-WAVE"
+      },
+      {
+        imgName: "004.svg",
+        name: "Google"
+      },
+      {
+        imgName: "005.svg",
+        name: "amazom"
+      },
+      {
+        imgName: "006.svg",
+        name: "facebook"
+      },
+      {
+        imgName: "007.svg",
+        name: "Uber"
+      },
+      {
+        imgName: "008.svg",
+        name: "OpenAI"
+      },
+      {
+        imgName: "009.svg",
+        name: "intel"
+      },
+      {
+        imgName: "010.svg",
+        name: "THEAI"
+      },
+      {
+        imgName: "011.svg",
+        name: "code"
+      },
+      {
+        imgName: "012.svg",
+        name: "4Geeks"
+      },
+    ];
     const developers = [
       {
         imgName: "001.jpg",
@@ -168,6 +220,7 @@ export default {
     ];
     return {
       developers,
+      logos,
     };
   },
 
@@ -186,6 +239,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-@import "@/components/MainBlock/Section5Developers/SectionDevelopers.scss";
-</style>
+<style lang="scss" scoped>@import "@/components/MainBlock/Section5Developers/SectionDevelopers.scss";</style>
