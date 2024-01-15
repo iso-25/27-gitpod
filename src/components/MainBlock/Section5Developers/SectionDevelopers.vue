@@ -20,8 +20,9 @@
 
     <div class="developers__logos">
       <div class="developers__logo-item" v-for="(item, index) in  logos" :key="index">
-        <img src="" alt="">
-        <img v-if="item.imgName" :src="require(`@/assets/devLogosImgs/${item.imgName}`)" :alt="item.name" />
+        <a :href="item.url">
+          <img v-if="item.imgName" :src="require(`@/assets/devLogosImgs/${item.imgName}`)" :alt="item.name" />
+        </a>
       </div>
     </div>
   </div>
@@ -34,7 +35,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 
 export default {
-  name: "MainBlock",
+  name: "SectionDevelopers",
   components: {
     TitleH2,
     SlideDeveloper,
@@ -44,50 +45,62 @@ export default {
   data() {
     const logos = [
       {
+        url: "/",
         imgName: "001.svg",
         name: "GitLab"
       },
       {
+        url: "/",
         imgName: "002.svg",
         name: "freeCodeCamp"
       },
       {
+        url: "/",
         imgName: "003.svg",
         name: "D-WAVE"
       },
       {
+        url: "/",
         imgName: "004.svg",
         name: "Google"
       },
       {
+        url: "/",
         imgName: "005.svg",
         name: "amazom"
       },
       {
+        url: "/",
         imgName: "006.svg",
         name: "facebook"
       },
       {
+        url: "/",
         imgName: "007.svg",
         name: "Uber"
       },
       {
+        url: "/",
         imgName: "008.svg",
         name: "OpenAI"
       },
       {
+        url: "/",
         imgName: "009.svg",
         name: "intel"
       },
       {
+        url: "/",
         imgName: "010.svg",
         name: "THEAI"
       },
       {
+        url: "/",
         imgName: "011.svg",
         name: "code"
       },
       {
+        url: "/",
         imgName: "012.svg",
         name: "4Geeks"
       },
@@ -239,4 +252,6 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>@import "@/components/MainBlock/Section5Developers/SectionDevelopers.scss";</style>
+<style lang="scss" scoped>
+@import "@/components/MainBlock/Section5Developers/SectionDevelopers.scss";
+</style>

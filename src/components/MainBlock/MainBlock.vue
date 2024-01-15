@@ -5,6 +5,7 @@
     <SectionThink />
     <SectionDesign />
     <SectionDevelopers />
+    <SectionStart />
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import SectionProject from "@/components/MainBlock/Section2Project/SectionProjec
 import SectionThink from "@/components/MainBlock/Section3Think/SectionThink.vue";
 import SectionDesign from "@/components/MainBlock/Section4Design/SectionDesign.vue";
 import SectionDevelopers from "@/components/MainBlock/Section5Developers/SectionDevelopers.vue";
+import SectionStart from "@/components/MainBlock/Section6Start/SectionStart.vue";
 
 export default {
   name: "MainBlock",
@@ -23,6 +25,7 @@ export default {
     SectionThink,
     SectionDesign,
     SectionDevelopers,
+    SectionStart,
   },
 };
 </script>

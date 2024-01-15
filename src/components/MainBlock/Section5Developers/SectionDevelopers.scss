@@ -36,6 +36,12 @@
   &__logo-item {
     padding: 10rem 16rem;
     flex-shrink: 0;
+    transition: var(--transition-btn);
+  
+    &:hover {
+        transform: scale(1.2);
+    }
+
     & img {
       width: 100%;
     }

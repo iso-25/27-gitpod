@@ -20,7 +20,7 @@ import DescGl from "@/components/DescGl.vue";
 import BtnExtension from "@/components/BtnExtension/BtnExtension.vue";
 
 export default {
-  name: "MainBlock",
+  name: "SectionDesign",
   components: {
     TitleH2,
     BtnExtension,
