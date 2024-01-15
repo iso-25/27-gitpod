@@ -45,8 +45,14 @@
   }
 
   &__li {
-    @include mobile-small {
-      text-align: center;
+    color: $color-text-primary;
+    font: var(--font-link-footer);
+    transition: var(--transition-btn);
+
+    &:hover {
+      color: $primary;
+      transform: var(--transform-btn);
+      text-shadow: 0rem 2rem 10rem $color-text-primary;
     }
   }
 
@@ -92,9 +98,23 @@
   }
 
   &__link {
+    
     display: flex;
     flex-direction: row;
     gap: 16rem;
+
+    & img {
+      max-width: 24rem;
+      border-radius: 12rem;
+    transition: var(--transition-btn);
+
+    &:hover {
+      color: $primary;
+      transform: scale(1.2);
+      box-shadow: 0rem 2rem 10rem $color-text-primary;
+    }
+  }
+
   }
 }
 

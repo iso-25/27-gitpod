@@ -65,6 +65,13 @@
     text-align: center;
     font: normal 700 18rem/125% var(--ff);
     text-wrap: nowrap;
+    transition: var(--transition-btn);
+
+    &:hover {
+      color: $color-text-secondary;
+      transform: var(-transform-btn-ext);
+      box-shadow: 0rem 2rem 10rem $color-text-primary;
+    }
 
     @include desktop-small {
       font-size: 17rem;
@@ -101,18 +108,23 @@
   &__social-link {
     width: 29rem;
     height: 29rem;
+    
     & img {
       width: 100%;
+      transition: var(--transition-btn);
+      &:hover {
+        color: $color-text-secondary;
+        transform: scale(1.2);
+      }
     }
     @include tablet {
       width: 27rem;
       height: 27rem;
-      }
+    }
     @include mobile {
       width: 25rem;
       height: 25rem;
-      }
-
+    }
   }
 
   &__img {

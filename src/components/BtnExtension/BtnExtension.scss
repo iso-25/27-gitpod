@@ -7,7 +7,13 @@
     width: 199rem;
     height: 47rem;
     position: relative;
-  }  
+    transition: var(--transition-btn);
+
+    &:hover {
+      transform: var(--transform-btn-ext);
+      box-shadow: 0rem 2rem 10rem $color-text-primary;      
+    }
+  }
 
   &__btn-border,
   &__btn {
@@ -15,7 +21,7 @@
     height: 100%;
     position: absolute;
     top: 0;
-    left: 0;    
+    left: 0;
   }
 
   &__btn-border {

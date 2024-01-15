@@ -9,12 +9,15 @@
       </avatar>
       <div class="dev__name-info">
         <name class="dev__name">{{ nameDev }}</name>
-        <p>
+        <p class="dev__role-tag">
           <role class="dev__role">{{ roleDev }}</role>
-          <a class="dev__tag" v-for="(tagDev, tagIndex) in tagsDev" :key="tagIndex" :href="tagDev.url">
-            <span class="dev__tag-span" v-if="tagIndex > 0">{{ (tagIndex > 0) ? ' and ' : '' }}</span>
-            {{  tagDev.tag }} </a>
-          </p>
+          <tag class="dev__tag" v-for="(tagDev, tagIndex) in tagsDev" :key="tagIndex" >
+            <span class="dev__tag-span" v-if="tagIndex > 0">{{ (tagIndex > 0) ? ' and ' : ' ' }}</span>
+            <a class="dev__tag-txt" :href="tagDev.url">
+              {{ tagDev.tag }} 
+            </a>
+          </tag>
+        </p>
       </div>
     </div>
   </div>

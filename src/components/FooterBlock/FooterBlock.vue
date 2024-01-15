@@ -2,14 +2,12 @@
 	<div class="footer">
 		<div class="footer__container">
 			<div class="footer__links">
-
 				<div class="footer__nav" v-for="(site, siteIndex) in  sites" :key="siteIndex">
 					<router-link v-for="(item, index) in site" :key="index" :to="item.url" class="footer__li"
 						:class="[{ 'first-element-class': index === 0 }, { 'element-mark': item.isMark }]">
 						{{ item.name }}
 					</router-link>
 				</div>
-
 			</div>
 			<div class="footer__socials">
 				<div class="footer__logo">

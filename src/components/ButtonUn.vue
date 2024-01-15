@@ -28,6 +28,7 @@ export default {
 
   &:hover{
     transform: var(--transform-btn);
+    box-shadow: 0rem 2rem 10rem $color-text-primary;    
   }
 }
 </style>

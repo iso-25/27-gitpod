@@ -5,12 +5,24 @@
 				<img src="@/assets/logo.svg" alt="gitpod" />
 			</router-link>
 			<div class="header__nav" :class="{ 'is-active': isActive }" @click="isActive = false">
-				<router-link to="/">Features</router-link>
-				<router-link to="/">Pricing</router-link>
-				<router-link to="/">Blog</router-link>
-				<router-link to="/">Docs</router-link>
-				<router-link to="/">Changelog</router-link>
-				<router-link to="/">We're hiring</router-link>
+				<div class="header__li">
+					<router-link to="/">Features</router-link>
+				</div>
+				<div class="header__li">
+					<router-link to="/">Pricing</router-link>
+				</div>
+				<div class="header__li">
+					<router-link to="/">Blog</router-link>
+				</div>
+				<div class="header__li">
+					<router-link to="/">Docs</router-link>
+				</div>
+				<div class="header__li">
+					<router-link to="/">Changelog</router-link>
+				</div>
+				<div class="header__li">
+					<router-link to="/">We're hiring</router-link>
+				</div>
 				<div class="header__close" @click="isActive = false">
 					<CloseIcon />
 				</div>
