@@ -56,11 +56,6 @@ $color-txt-btn-extension: #12100c;
     --font-dev: normal 400 15rem/150% var(--ff);
   }
 }
-/*
-@include tablet-small() {
-  :root {
-  }
-}*/
 
 @include mobile {
   :root {
@@ -71,8 +66,3 @@ $color-txt-btn-extension: #12100c;
     --font-dev: normal 400 14rem/150% var(--ff);
   }
 }
-/*
-@include mobile-small {
-  :root {
-  }
-}*/

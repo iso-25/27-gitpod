@@ -21,7 +21,6 @@
 					<img src="@/assets/frame-git.svg" alt="Git">
 					<img src="@/assets/frame-other.svg" alt="Other">
 				</div>
-
 			</div>
 		</div>
 	</div>

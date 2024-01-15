@@ -28,7 +28,8 @@ export default {
   background: linear-gradient(
     180deg,
     rgba(249, 249, 249, 1) 0%,
-    rgba(236, 231, 229, 1) 40%
-  );
+    rgb(255, 241, 241, 0.7) 30%
+    );
+    // rgba(236, 231, 229, 1) 30%
 }
 </style>

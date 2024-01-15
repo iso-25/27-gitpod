@@ -11,7 +11,12 @@
 
     &:hover {
       transform: var(--transform-btn-ext);
-      box-shadow: 0rem 2rem 10rem $color-text-primary;      
+      box-shadow: 0rem 2rem 10rem $color-text-primary;
+    }
+
+    @include mobile-small {
+      width: 150rem;
+      height: 120rem;
     }
   }
 
@@ -43,5 +48,16 @@
     font: var(--font-btn-extension);
     text-align: center;
     text-wrap: nowrap;
+
+    @include mobile-small {
+      flex-direction: column;
+      gap: 5rem;
+      text-wrap: wrap;
+    }
+
+    & img {
+      width: 24rem;
+      border-radius: 12rem;
+    }
   }
 }

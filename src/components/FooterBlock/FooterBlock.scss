@@ -54,6 +54,11 @@
       transform: var(--transform-btn);
       text-shadow: 0rem 2rem 10rem $color-text-primary;
     }
+
+    @include mobile-small {
+      text-align: center;
+    }
+
   }
 
   &__socials {

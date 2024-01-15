@@ -1,18 +1,23 @@
 <template>
-  <!-- <div class="btn-un"> -->
     <a :href="url" class="btn-un__link">
-      <div class="btn-un__btn">
+      <div :class="[ 'btn-un__btn', Array.isArray(classNames) ? classNames.join(' ') : '' ]">
         <img v-if="imgName" :src="require(`@/assets/${imgName}`)" :alt="txtBtn" />
         <div>{{ txtBtn }}</div>
       </div>
     </a>
-  <!-- </div> -->
 </template>
 
 <script>
 export default {
   name: "ButtonUn",
   props: {
+    classNames: {
+      type: Array,
+      default: () => [],
+      validator: (value) => {
+        return value.every((item) => typeof item === 'string');
+      },
+    },
     url: String,
     imgName: String,
     txtBtn: String,

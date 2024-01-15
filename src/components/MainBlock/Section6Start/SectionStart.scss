@@ -1,0 +1,199 @@
+.start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 160rem;
+
+  &__title {
+    margin-bottom: 48rem;
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 26rem;
+
+    @include tablet-small {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__blocks {
+    width: calc(500% - 13rem);
+    border-radius: 20rem;
+    background: $white;
+    padding: 56rem 56rem 86rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+
+    @include desktop-small {
+      padding: 56rem 36rem 86rem;
+    }
+
+    @include tablet-small {
+      width: 100%;
+      align-self: normal;
+    }
+
+    @include mobile {
+      padding: 26rem 16rem 36rem;
+    }
+  }
+
+  &__repository-title {
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+
+  &__repository-desc {
+    text-align: center;
+    line-height: 133%;
+  }
+  &__rep-btns-container {
+    padding: 52rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16rem;
+  }
+
+  &__rep-btn-gitlab {
+    background: #fc6d26;
+  }
+
+  &__rep-btn-github {
+    background: #000;
+  }
+
+  &__rep-btn-bitbucket {
+    background: #2684ff;
+  }
+
+  &__repository-desc-pref {
+    text-align: center;
+    line-height: 133%;
+    padding: 0 22rem;
+    margin-bottom: 5rem;
+  }
+
+  &__repository-pref {
+    text-align: center;
+    border-radius: 12rem;
+    background: #ffe4bc;
+    width: fit-content;
+    padding: 0 16rem;
+  }
+
+  &__examlpes-title {
+    text-align: center;
+    margin-bottom: 7rem;
+  }
+
+  &__examlpes-desc {
+    text-align: center;
+    font: var(--font-desc-welcome);
+    margin-bottom: 25rem;
+  }
+
+  &__examlpes-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+  }
+
+  &__examlpe-item {
+    width: 100%;
+    border-radius: 12rem;
+    background: $background-primary;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11rem 12rem 11rem 16rem;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 10rem;
+    }
+  }
+  &__examlpe-logo-container {
+    display: flex;
+    gap: 16rem;
+    align-items: center;
+    @include tablet-small {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10rem;
+    }
+
+    @include mobile {
+      align-items: center;
+    }
+  }
+
+  &__examlpe-txt {
+    color: $color-text-primary;
+    font-size: 20rem;
+    font-weight: 400;
+    line-height: 100%;
+
+    @include desktop-small {
+      font-size: 18rem;
+    }
+
+    @include tablet {
+      font-size: 16rem;
+    }
+
+    @include mobile {
+      font-size: 14rem;
+    }
+  }
+
+  &__examlpe-btn {
+    padding: 8rem 12rem;
+    border-radius: 12rem;
+    background: $color-txt-btn-extension;
+    box-shadow: 0rem 1rem 1rem 0rem rgba(0, 0, 0, 0.1);
+    color: $white;
+    text-wrap: nowrap;
+  }
+}
+
+.btn-un__link {
+  border-radius: 12rem;
+}
+
+.repository-btns {
+  padding: 9rem 33rem;
+  width: 262rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16rem;
+  border-radius: 12rem;
+  box-shadow: none;
+  text-align: center;
+  color: $white;
+  transform: var(--transform-btn-ext);
+  & img {
+    transition: none;
+    box-shadow: none;
+  }
+
+  @include mobile {
+    width: 230rem;
+    padding: 9rem 12rem;
+  }
+
+  @include mobile-small {
+    width: 130rem;
+    flex-direction: column;
+  }
+}

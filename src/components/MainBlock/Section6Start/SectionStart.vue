@@ -2,41 +2,37 @@
   <div class="start">
     <TitleH2 msg="Get started now" class="start__title" />
     <div class="start__container">
-
-      <div class="start__repository">
+      <div class="start__blocks">
         <TitleH3 msg="Connect Git repository" class="start__repository-title" />
         <DescriptionGl msg="Select a Git provider to start with an existing project from any Git context."
           class="start__repository-desc" />
-        <ButtonUn url="/" imgName="rep-gitlab.svg" txtBtn="Continue with GitLab"
-          class="repository-btns start__rep-btn-gitlab" />
-        <ButtonUn url="/" imgName="rep-github.svg" txtBtn="Continue with GitHub"
-          class="repository-btns start__rep-btn-github" />
-        <ButtonUn url="/" imgName="rep-bitbucket.svg" txtBtn="Continue with Bitbucket"
-          class="repository-btns start__rep-btn-bitbucket" />
+        <div class="start__rep-btns-container">
+          <ButtonUn :classNames="['repository-btns', 'start__rep-btn-gitlab']" url="/" imgName="rep-gitlab.svg"
+            txtBtn="Continue with GitLab" />
+          <ButtonUn :classNames="['repository-btns', 'start__rep-btn-github']" url="/" imgName="rep-github.svg"
+            txtBtn="Continue with GitHub" />
+          <ButtonUn :classNames="['repository-btns', 'start__rep-btn-bitbucket']" url="/" imgName="rep-bitbucket.svg"
+            txtBtn="Continue with Bitbucket" />
+        </div>
         <DescriptionGl msg="Or prefix any GitLab, GitHub or Bitbucket URL with" class="start__repository-desc-pref" />
         <DescriptionGl msg="gitpod.io/#" class="start__repository-pref" />
       </div>
-      <div class="start__examlpes">
+      <div class="start__blocks">
         <TitleH3 msg="Launch an example workspace" class="start__examlpes-title" />
         <DescriptionGl msg="Dive into one of our example workspaces" class="start__examlpes-desc" />
         <div class="start__examlpes-container">
-
           <div class="start__examlpe-item" v-for="(item, index) in  examlpes" :key="index">
-            <img v-if="item.pathLogo" :src="require(`@/assets/${item.pathLogo}`)" :alt="item.nameWorkspace" class="start__examlpe-img"/>
-            <p class="start__examlpe-txt">{{ item.nameWorkspace }}</p>
-            <ButtonUn :imgName="item.pathImgBtn" :url="item.urlBtn" :txtBtn="item.txtBtn" class="start__examlpe-btn" />
+            <div class="start__examlpe-logo-container">
+              <img v-if="item.pathLogo" :src="require(`@/assets/${item.pathLogo}`)" :alt="item.nameWorkspace"
+                class="start__examlpe-img" />
+              <p class="start__examlpe-txt">{{ item.nameWorkspace }}</p>
+            </div>
+            <ButtonUn :classNames="['start__examlpe-btn']" :imgName="item.pathImgBtn" :url="item.urlBtn"
+              :txtBtn="item.txtBtn" />
+
           </div>
-
-
-
-
-
-
-
         </div>
-
       </div>
-
     </div>
   </div>
 </template>
@@ -106,33 +102,13 @@ export default {
         urlBtn: "/",
       },
     ];
-    const logos = [
-      {
-        url: "/",
-        imgName: "001.svg",
-        name: "GitLab"
-      },
-    ];
-    const developers = [
-      {
-        imgName: "001.jpg",
-        txtInfo: ["GitPod is incredibly cool.",
-          "In my opinion, this is a big step in open source software contribution. I'm excited to see where we go from here."],
-        nameDev: "Ben Halpern",
-        roleDev: "Creator and Co-founder",
-        tagsDev: [
-          { tag: "@forem", url: "/" },
-          { tag: "@ThePracticalDev", url: "/" }
-        ],
-      },
-    ];
     return {
-      developers,
-      logos,
       examlpes,
     };
   },
 };
 </script>
 
-<style lang="scss" scoped>@import "@/components/MainBlock/Section6Start/SectionStart.scss";</style>
+<style lang="scss">
+@import "@/components/MainBlock/Section6Start/SectionStart.scss";
+</style>
