@@ -20,7 +20,7 @@
 				<div class="header__li">
 					<router-link to="/">Changelog</router-link>
 				</div>
-				<div class="header__li">
+				<div class="header__li element-mark">
 					<router-link to="/">We're hiring</router-link>
 				</div>
 				<div class="header__close" @click="isActive = false">
