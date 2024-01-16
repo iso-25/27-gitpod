@@ -173,18 +173,20 @@
 .repository-btns {
   padding: 9rem 33rem;
   width: 262rem;
+  // width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 16rem;
   border-radius: 12rem;
-  box-shadow: none;
   text-align: center;
   color: $white;
   transform: var(--transform-btn-ext);
   & img {
-    transition: none;
-    box-shadow: none;
+  }
+
+  & .btn-un__link {
+    width: 100%;
   }
 
   @include mobile {
